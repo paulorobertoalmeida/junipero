@@ -11,13 +11,17 @@ import SearchBar from '../SearchBar/SearchBar'
 import Decentraland from '../Decentraland/Decentraland'
 
 import Sandbox from '../Sandbox/Sandbox'
+import styled from 'styled-components'
 
-
+const MainHomepage = styled.div`
+margin: 15px;
+padding: 10px;
+`;
 // import { Container } from './styles';
 
 function HomePage() {
   return(
-      <div>
+      <MainHomepage>
             <SearchBar />
             <About />  
             <NewLands />
@@ -27,7 +31,7 @@ function HomePage() {
             <LatestLands /> 
             <LandAreas /> 
             <HowToMint />
-    </div>
+    </MainHomepage>
   );
 }
 

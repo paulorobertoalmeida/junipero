@@ -16,9 +16,14 @@ margin: auto;
 padding: auto;
 `;
 
+const MainContainer = styled.div`
+margin = 0;
+background-color: #70C1B3;
+`;
+
 function App() {
   return(
-    <div>
+    <MainContainer>
     <Navbar bg="light" variant="light">
       <Navbar.Brand href="#home">Junipero</Navbar.Brand>
       <Nav className="mr-auto">
@@ -31,14 +36,13 @@ function App() {
       <Button variant="outline-primary">Connect Wallet</Button>
     </Form>
     </Navbar>
-      <h1>Hello wold</h1>
     <HomePage />
     <Footer>
     <FooterText>
       <p>Junipero</p>
       </FooterText>
     </Footer>
-    </div>
+    </MainContainer>
   );
 }
 
